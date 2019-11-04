@@ -14,7 +14,7 @@ $emailadd = $_POST['email'];
     $cek = pg_query($query);
   
   $token = date("Ymdhi").$username;
-$homepage = file_get_contents("http://localhost:8080/kuliner_bkt/mailtemplate.php?token=$token&user=$username");
+$homepage = file_get_contents("http://souvenirwebgis.ddns.net/bkt_tourism/mailtemplate.php?token=$token&user=$username");
 
   if($cek)
   {
@@ -45,7 +45,7 @@ $homepage = file_get_contents("http://localhost:8080/kuliner_bkt/mailtemplate.ph
   
   $mail->ErrorInfo;
   } else {
-    header('location:http://localhost:8080/kuliner_bkt/souvenir_bkt/admin/checkemailjo.php');
+    header('location:http://souvenirwebgis.ddns.net/bkt_tourism/souvenir_bkt/admin/checkemailjo.php');
   }
     
   }
