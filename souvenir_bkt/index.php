@@ -176,7 +176,7 @@ function viewdigitcul()
 function viewdigitkec()
 {
   ab = new google.maps.Data();
-  ab.loadGeoJson(server);
+  ab.loadGeoJson(server+'subdistrict_boundary.php');
   ab.setStyle(function(feature)
   {
      var gid = feature.getProperty('id');
