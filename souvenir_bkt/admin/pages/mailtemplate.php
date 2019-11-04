@@ -31,7 +31,7 @@
 		</div>
 		<div id="body">
 			<p>Click the link below to verify your account</p>
-			<a href="http://localhost/kuliner_bkt/souvenir_bkt/admin/pages/verifikasi.php?token=<?php echo $_GET['token']?>&user=<?php echo $_GET['user']?>">Click on this link to confirm your e-mail</a>
+			<a href="http://souvenirwebgis.ddns.net/bkt_tourism/souvenir_bkt/admin/pages/verifikasi.php?token=<?php echo $_GET['token']?>&user=<?php echo $_GET['user']?>">Click on this link to confirm your e-mail</a>
 		</div>
 		<div id="footer">
 			<h3>end of discusion</h3>
