@@ -181,7 +181,6 @@ function viewdigitkec()
   {
      var gid = feature.getProperty('id');
      console.log("gid="+gid);
-     color = '#ff3300';
      console.log(color); 
       if (gid == 'K001'){ color = '#ff3300'; 
         console.log(color); 
