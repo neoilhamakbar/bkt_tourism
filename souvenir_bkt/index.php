@@ -38,7 +38,7 @@ require("../connect.php");
 
 <script type="text/javascript">
 
-var server = "http://souvenirwebgis.ddns.net/bkt_tourism/souvenir_bkt/";
+var server = "http://souvenirwebgis/bkt_tourism/souvenir_bkt/";
 var map;
 var markersDua = [];
 var koordinat = 'null'
@@ -235,14 +235,14 @@ function legenda()
         legend.id = 'legend';
         var content = [];
         content.push('<h4>Legenda</h4>');
-        // content.push('<p><div class="color l"></div>Culinary</p>');
-        // content.push('<p><div class="color f"></div>Small Industry</p>');
+        content.push('<p><div class="color l"></div>Culinary</p>');
+        content.push('<p><div class="color f"></div>Small Industry</p>');
         content.push('<p><div class="color g"></div>Souvenir</p>');
-        // content.push('<p><div class="color h"></div>Hotel</p>');
-        // content.push('<p><div class="color i"></div>Restaurant</p>');
-        // content.push('<p><div class="color j"></div>WorshipPlace</p>');
-        // content.push('<p><div class="color k"></div>Tourism</p>');
-        // content.push('<p><div class="color e"></div>Angkot</p>');
+        content.push('<p><div class="color h"></div>Hotel</p>');
+        content.push('<p><div class="color i"></div>Restaurant</p>');
+        content.push('<p><div class="color j"></div>WorshipPlace</p>');
+        content.push('<p><div class="color k"></div>Tourism</p>');
+        content.push('<p><div class="color e"></div>Angkot</p>');
         content.push('<p><div class="color d"></div>District of Mandiangin Koto Selayan</p>');
         content.push('<p><div class="color c"></div>District of Guguk Panjang</p>');
         content.push('<p><div class="color b"></div>District of Aur Birugo Tigo Baleh</p>');
@@ -399,7 +399,7 @@ function detailinforestaurant(id19)
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
 
-            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+namaa+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telephone</td><td>:</td><td> "+cp+"</td></tr></table></span>",   
+            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+namaa+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr></table></span>",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -460,7 +460,7 @@ function detailinfoik(id1)
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
 
-            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+namaa+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telephone</td><td>:</td><td> "+cp+"</td></tr></table></span>",   
+            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+namaa+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr></table></span>",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -547,7 +547,7 @@ function detculi(id14433){
                 // $('#hasilcaridet').append("<tr><td colspan='2'> "+culinary+"</td><td> "+price+"</td></tr>");
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+namaa+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telephone</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Open</td><td>:</td><td> "+open+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Close</td><td>:</td><td> "+close+"</td></tr><br><tr><td><i class='fa fa-building'></i>Capacity</td><td>:</td><td> "+capacity+"</td></tr></table></span>",   
+            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+namaa+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Open</td><td>:</td><td> "+open+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Close</td><td>:</td><td> "+close+"</td></tr><br><tr><td><i class='fa fa-building'></i>Capacity</td><td>:</td><td> "+capacity+"</td></tr></table></span>",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -598,7 +598,7 @@ function detailinfomosque(id9)
           
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Masjid Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-building'></i>Kapasitas</td><td>:</td><td> "+capacity+"</td></tr></table></span>",   
+            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama Masjid</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-building'></i>Kapasitas</td><td>:</td><td> "+capacity+"</td></tr></table></span>",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -652,7 +652,7 @@ function detailinfoobj(id3)
          
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Object Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-building'></i>Jam Buka</td><td>:</td><td> "+open+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Jam Tutup</td><td>:</td><td> "+close+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Biaya</td><td>:</td><td> "+ticket+"</td></tr></table></span>",   
+            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama Objek</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-building'></i>Jam Buka</td><td>:</td><td> "+open+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Jam Tutup</td><td>:</td><td> "+close+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Biaya</td><td>:</td><td> "+ticket+"</td></tr></table></span>",   
             pixelOffset: new google.maps.Size(0, -33)
             });
             infoposisi.push(infowindow); 
@@ -708,7 +708,7 @@ function detailinfosou(id14)
                     } 
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+namaa+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telephone</td><td>:</td><td> "+cp+"</td></tr></table></span>",   
+            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+namaa+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr></table></span>",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -1035,7 +1035,7 @@ function detsou(id14433){
                 // $('#hasilcaridet').append("<tr><td colspan='2'> "+product_souvenir+"</td><td> "+price+"</td></tr>");
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telephone</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><input type='button' class='btn btn-success' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\")'<br>&nbsp&nbsp<input type='button' class='btn btn-success' value='More Information' onclick='gallery(\""+id+"\")'<br>&nbsp&nbsp <input type='button' class='btn btn-success' value='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' />",   
+            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><input type='button' class='btn btn-success' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\")'<br>&nbsp&nbsp<input type='button' class='btn btn-success' value='More Information' onclick='gallery(\""+id+"\")'<br>&nbsp&nbsp <input type='button' class='btn btn-success' value='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' />",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -1107,7 +1107,7 @@ function detsouxx(id14433){
                 // $('#hasilcaridet').append("<tr><td colspan='2'> "+product_small_industry+"</td><td> "+price+"</td></tr>");
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telephone</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><input type='button' class='btn btn-success' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\")'<br>&nbsp&nbsp<input type='button' class='btn btn-success' value='More Information' onclick='gallery(\""+id+"\")'<br>&nbsp&nbsp <input type='button' class='btn btn-success' value='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' />",   
+            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><input type='button' class='btn btn-success' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\")'<br>&nbsp&nbsp<input type='button' class='btn btn-success' value='More Information' onclick='gallery(\""+id+"\")'<br>&nbsp&nbsp <input type='button' class='btn btn-success' value='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' />",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -1178,7 +1178,7 @@ function detsou1(id14433f){
                 // $('#hasilcaridet').append("<tr><td colspan='2'> "+dataproduct+"</td><td> "+price+"</td></tr>");
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telephone</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><input type='button' class='btn btn-success' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\")'<br>&nbsp&nbsp<input type='button' class='btn btn-success' value='Gallery' onclick='gallery(\""+id+"\")'<br>&nbsp&nbsp <input type='button' class='btn btn-success' value='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' />",   
+            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><input type='button' class='btn btn-success' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\")'<br>&nbsp&nbsp<input type='button' class='btn btn-success' value='Gallery' onclick='gallery(\""+id+"\")'<br>&nbsp&nbsp <input type='button' class='btn btn-success' value='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' />",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -1247,7 +1247,7 @@ function detik(id14433){
                 $('#hasilcaridet').append("<tr><td colspan='2'> "+product_small_industry+"</td><td> "+price+"</td></tr>");
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telephone</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><input type='button' class='btn btn-success' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\")'<br>&nbsp&nbsp<input type='button' class='btn btn-success' value='Gallery' onclick='gallery(\""+id+"\")'<br>&nbsp&nbsp <input type='button' class='btn btn-success' value='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' />",   
+            content: "<center><span style=color:black><b>Information</b><table><tr><td><i class='fa fa-home'></i>Nama</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr><br><tr><td><i class='fa fa-clock-o'></i>Owner</td><td>:</td><td> "+owner+"</td></tr></table></span><br><input type='button' class='btn btn-success' value='Object Arround' onclick='tampil_sekitar(\""+latitude+"\",\""+longitude+"\",\""+name+"\")'<br>&nbsp&nbsp<input type='button' class='btn btn-success' value='Gallery' onclick='gallery(\""+id+"\")'<br>&nbsp&nbsp <input type='button' class='btn btn-success' value='Route' onclick='callRoute(centerLokasi,centerBaru);rutetampil()' />",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -1622,7 +1622,7 @@ function detailinfohotel(id90){
           
             infowindow = new google.maps.InfoWindow({
             position: centerBaru,
-            content: "<center><span style=color:black><b>Information</b><br><table><tr><td><i class='fa fa-home'></i>Hotel Name</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Address</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telephone</td><td>:</td><td> "+cp+"</td></tr></table></span>",   
+            content: "<center><span style=color:black><b>Information</b><br><table><tr><td><i class='fa fa-home'></i>Nama Hotel</td><td>:</td><td> "+name+"</td></tr><br><tr><td><i class='fa fa-map-marker'></i>Alamat</td><td>:</td><td> "+address+"</td></tr><br><tr><td><i class='fa fa-phone'></i>Telepon</td><td>:</td><td> "+cp+"</td></tr></table></span>",   
             pixelOffset: new google.maps.Size(0, -33)
             });
           infoposisi.push(infowindow); 
@@ -1686,7 +1686,7 @@ function kulAngkot(id_angkot1122){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\")'>See</a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\")'>Lihat</a></td></tr>");
               }
             }
            }
@@ -1747,7 +1747,7 @@ function ikangkot(id_angkot1122442,lat1,lng1){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>See</a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>Lihat</a></td></tr>");
               }
             }
            }
@@ -1808,7 +1808,7 @@ function restaurantangkot(id_angkot1122492,lat1,lng1){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>See</a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>Lihat</a></td></tr>");
               }
             }
            }
@@ -1869,7 +1869,7 @@ function souangkot(id_angkot112244,lat1,lng1){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>See</a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>Lihat</a></td></tr>");
               }
             }
            }
@@ -1930,7 +1930,7 @@ function hotelangkot(id_angkot11224436,lat1,lng1){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>See</a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>Lihat</a></td></tr>");
               }
             }
            }
@@ -1991,7 +1991,7 @@ function owangkot(id_angkot11224439,lat1,lng1){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>See</a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>Lihat</a></td></tr>");
               }
             }
            }
@@ -2052,7 +2052,7 @@ function worshipangkot(id_angkot11224437,lat1,lng1){
                 infoposisi.push(infowindow); 
                 infowindow.open(map,marker);
                 console.log(id_angkot);
-                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>See</a></td></tr>");
+                $('#tampillistangkotik').append("<tr><td>"+id_angkot+"</td><td><a role='button' class='btn btn-success' onclick='detailangkot(\""+id_angkot+"\",\""+lat+"\",\""+lng+"\",\""+lat1+"\",\""+lng1+"\")'>Lihat</a></td></tr>");
               }
             }
            }
@@ -2442,7 +2442,7 @@ function route_sekitar(lat1,lng1,lat,lng) {
 function industri_sekitar(latitude,longitude,rad){ //INDUSTRI SEKITAR
         $('#hasilcariind').empty();
         $('#hasilcariind1').show();
-        $('#hasilcariind').append("<thead><th class='centered'>Name</th><th colspan='3' class='centered'>Aksi</th></thead>");
+        $('#hasilcariind').append("<thead><th class='centered'>Nama</th><th colspan='3' class='centered'>Aksi</th></thead>");
         $.ajax({url: server+'_sekitar_industri.php?lat='+latitude+'&long='+longitude+'&rad='+rad, data: "", dataType: 'json', success: function(rows){ 
           for (var i in rows){ 
             var row = rows[i];
@@ -2474,7 +2474,7 @@ function industri_sekitar(latitude,longitude,rad){ //INDUSTRI SEKITAR
 function restaurant_sekitar(latitude,longitude,rad){ //INDUSTRI SEKITAR
         $('#hasilcarirestaurant').empty();
         $('#hasilcarirestaurant1').show();
-        $('#hasilcarirestaurant').append("<thead><th class='centered'>Name</th><th colspan='3' class='centered'>Aksi</th></thead>");
+        $('#hasilcarirestaurant').append("<thead><th class='centered'>Nama</th><th colspan='3' class='centered'>Aksi</th></thead>");
         $.ajax({url: server+'_sekitar_restaurant.php?lat='+latitude+'&long='+longitude+'&rad='+rad, data: "", dataType: 'json', success: function(rows){ 
           for (var i in rows){ 
             var row = rows[i];
@@ -2508,7 +2508,7 @@ function kuliner_sekitar(latitude,longitude,rad){ //KULINER SEKITAR
 
           $('#hasilcariculi').empty();
           $('#hasilcariculi1').show();
-          $('#hasilcariculi').append("<thead><th class='centered'>Name</th><th colspan='3' class='centered'>Aksi</th></thead>");
+          $('#hasilcariculi').append("<thead><th class='centered'>Nama</th><th colspan='3' class='centered'>Aksi</th></thead>");
           $.ajax({url: server+'_sekitar_kuliner.php?lat='+latitude+'&long='+longitude+'&rad='+rad, data: "", dataType: 'json', success: function(rows){ 
             for (var i in rows){ 
               var row = rows[i];
@@ -2548,7 +2548,7 @@ function masjid_sekitar(latitude,longitude,rad){ // MASJID SEKITAR
 
         $('#hasilcarimosque').empty();
         $('#hasilcarimosque1').show();
-        $('#hasilcarimosque').append("<thead><th class='centered'>Name</th><th colspan='3' class='centered'>Aksi</th></thead>");
+        $('#hasilcarimosque').append("<thead><th class='centered'>Nama</th><th colspan='3' class='centered'>Aksi</th></thead>");
         $.ajax({url: server+'_sekitar_masjid.php?lat='+latitude+'&long='+longitude+'&rad='+rad, data: "", dataType: 'json', success: function(rows){ 
           for (var i in rows){ 
             var row = rows[i];
@@ -2581,7 +2581,7 @@ function oleholeh_sekitar(latitude,longitude,rad){ // OLEH-OLEH SEKITAR
 
           $('#hasilcarisouv').empty();
            $('#hasilcarisouv1').show();
-          $('#hasilcarisouv').append("<thead><th class='centered'>Name</th><th colspan='3' class='centered'>Aksi</th></thead>");
+          $('#hasilcarisouv').append("<thead><th class='centered'>Nama</th><th colspan='3' class='centered'>Aksi</th></thead>");
           $.ajax({url: server+'_sekitar_oleholeh.php?lat='+latitude+'&long='+longitude+'&rad='+rad, data: "", dataType: 'json', success: function(rows){ 
             for (var i in rows){ 
               var row = rows[i];
@@ -2616,7 +2616,7 @@ function tw_sekitar(latitude,longitude,rad){ // TEMPAT WISATA SEKITAR
 
           $('#hasilcariobj').empty();
           $('#hasilcariobj1').show();
-          $('#hasilcariobj').append("<thead><th class='centered'>Name</th><th colspan='3' class='centered'>Aksi</th></thead>");
+          $('#hasilcariobj').append("<thead><th class='centered'>Nama</th><th colspan='3' class='centered'>Aksi</th></thead>");
           $.ajax({url: server+'_sekitar_tw.php?lat='+latitude+'&long='+longitude+'&rad='+rad, data: "", dataType: 'json', success: function(rows){ 
             for (var i in rows){ 
               var row = rows[i];
@@ -2656,7 +2656,7 @@ function tw_sekitar(latitude,longitude,rad){ // TEMPAT WISATA SEKITAR
           $('#hasilcarihotel').empty();
           $('#hasilcarihotel1').show();
           //cekRadius();
-          $('#hasilcarihotel').append("<thead><th class='centered'>Name</th><th colspan='3' class='centered'>Aksi</th></thead>");
+          $('#hasilcarihotel').append("<thead><th class='centered'>Nama</th><th colspan='3' class='centered'>Aksi</th></thead>");
           $.ajax({url: server+'_sekitar_hotel.php?lat='+latitude+'&long='+longitude+'&rad='+rad, data: "", dataType: 'json', success: function(rows){ 
             for (var i in rows){ 
               var row = rows[i];
@@ -2715,7 +2715,7 @@ function aktifkanRadius()
           $("#hasilindustry").hide();
           $("#hasilculi").hide();
           $("#hasilmosque").hide();
-          $("#hasilsouv").hide();
+          $("#hasilsouv").show();
           $("#hasilobj").hide();
           $("#hasilhotel").hide();
            $("#hasilrestaurant").hide();
@@ -3819,7 +3819,7 @@ hapusawal();
         <div class="col-lg-4 ds"  id="hasilrute" style="display:none;">
           <!-- <div class="col-md-12 padding-0" style="display:none;"> -->
           <!-- <h3 style="font-size:16px">Rute</h3> -->
-          <a class="btn btn-compose">Route</a>
+          <a class="btn btn-compose">Rute</a>
               <!-- First Action -->
               <div class="box-body" style="max-height:557px;overflow:auto;">
                 <div class="form-group" id="detailrute1" >
