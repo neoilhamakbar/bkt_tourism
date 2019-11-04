@@ -1,5 +1,5 @@
 <?php
-	$host = "souvenirwebgis.ddns.net";
+	$host = "localhost";
 	$user = "postgres";
 	$pass = "neo@123456789";
 	$port = "5432";
