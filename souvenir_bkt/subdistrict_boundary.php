@@ -1,5 +1,5 @@
 <?php
-require '../connect.php';
+require '../../connect.php';
 $querysearch="	SELECT row_to_json(fc) 
 				FROM ( SELECT 'FeatureCollection' As type, array_to_json(array_agg(f)) As features 
 				FROM (SELECT 'Feature' As type , ST_AsGeoJSON(district.geom)::json As geometry , row_to_json((SELECT l 
